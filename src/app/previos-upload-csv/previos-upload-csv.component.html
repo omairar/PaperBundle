@@ -1,0 +1,37 @@
+<p>Previos Uploaded CSV Contents </p>
+<table>
+    <tr>
+        <th>Size</th>
+        <th> GSM</th>
+        <th> Quality </th>
+        <th> Mills </th>
+        <th> Reem Wt</th>
+        <th> Reem Qty</th>
+        <th> Bundle Qty</th>
+        <th> Wgth(Kgs)</th>
+    </tr>
+
+
+    <tr *ngFor="let item of items">
+        <td>{{item.payload.doc.data().size}}</td>
+        <td>{{item.payload.doc.data().gsm}}</td>
+        <td>{{item.payload.doc.data().quality}}</td>
+        <td>{{item.payload.doc.data().mills}}</td>
+        <td>{{item.payload.doc.data().reemwt}}</td>
+        <td>{{item.payload.doc.data().reemqty}}</td>
+        <td>{{item.payload.doc.data().bundleqty}}</td>
+        <td>{{item.payload.doc.data().wght}}</td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<div class="bttn">
+    <button routerLink="/"> Go Back</button>&nbsp;
+    <button (click)="delAll()" routerLink="/"> DElete All</button>
+</div>
+
+<div class="bttn">
+    
+</div>

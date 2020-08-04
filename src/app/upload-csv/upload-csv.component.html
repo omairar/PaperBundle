@@ -1,0 +1,9 @@
+<p>UPLOAD CSV Here </p> 
+<input type="file" accept=".csv" (change)="uplload($event)">
+<button (click)="onSubmit()" routerLink="/disp"> upload </button>
+&nbsp;
+<button routerLink="/previous"> View All </button>
+<br>
+<hr>
+
+<router-outlet></router-outlet>
